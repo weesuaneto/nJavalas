@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "nJavalas",
+  "version": "1.0.0",
+  "description": "Replaces all images on all pages with Javalas.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["njavalas.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
